@@ -1,0 +1,295 @@
+<%-include("header") %>
+<nav style="background-color: white;">
+    <div class="b1left">
+        <img src="1_m-R_BkNf1Qjr1YbyOIJY2w.png" alt="">
+        <a href="/" style=" text-decoration: none; font: 700 1.5vmax 'gilroy'; color: black;" > <h1>Medium</h1></a>
+    </div>
+    <div class="b1right">
+       <a href="/ourstory" style=" text-decoration: none; font: 100 .8vmax 'gilroy'; color: black;" > <h3>Our story</h3></a>
+       <a href="/Membership" style=" text-decoration: none; font: 100 .8vmax 'gilroy'; color: black;" > <h3>Membership</h3></a>
+       <a href="/Write" style=" text-decoration: none; font: 100 .8vmax 'gilroy'; color: black;" > <h3>Write</h3></a>
+       <a href="/Signin" style=" text-decoration: none; font: 100 .8vmax 'gilroy'; color: black;" > <h3>Signin</h3></a>
+       <a href="/Get-started" style=" text-decoration: none;
+          padding: 10px 25px;
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    cursor: pointer; font: 100 .8vmax 'gilroy';" > <h3>Get Started</h3></a>
+      
+       
+    </div>
+    <style>
+        .box4{
+            width: 100%;
+            height: 120vh;
+        }
+        .box4top{
+            width: 100%;
+            height: 55vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: .1px solid black;
+        }
+.box4top>h1{
+    margin-top: 100px;
+    font: 100 8vmax "sans";
+    letter-spacing: -5px;
+}
+        .box4bottom{
+            width: 100%;
+            height: 65vh;
+            display: flex;
+            border-bottom: .1px solid black;
+        }
+        .b4bleft{
+            width: 50%;
+            height: inherit;
+            border-right: .1px solid black;
+            padding: 50px 100px;
+        }
+        .b4bleft>p{
+            font: 300 1.15vmax "gilroy";
+        }
+        .box5{
+            width: 100%;
+            height: 120vh;
+            background-color: rgb(255,209,185);
+        }
+        .b5top{
+            height: 60vh;
+            text-align: center;
+            padding: 50px 300px;
+        }
+        .b5top>h1{
+            font: 100 8vmax "sans";
+            letter-spacing: -4px;
+            word-spacing: -3px;
+        }
+        .b5top>p{
+            font: 300 1.15vmax "gilroy";
+           margin-left: 130px;
+            width: 70%;
+        }
+        .b5bottom{
+            width: 100%;
+            height: inherit;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 50px 0;
+        }
+        .b5bottom h1{
+            margin-left: 10px;
+            font: 100 1.8vmax "gilroy";
+        }
+        .b5b1,.b5b2,.b5b3{
+            width: 100%;
+            height: inherit;  
+            margin: 0 10px; 
+        }
+        .b5b11,.b5b12,.b5b13,.b5b14,.b5b21,.b5b22,.b5b23,.b5b24,.b5b31,.b5b32,.b5b33,.b5b34{
+            width: 100%;
+            height: 10vh;
+            border-top: .1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+        .b5b14,.b5b24,.b5b34{
+            border-bottom: .1px solid black;
+        }
+        .box6{
+            width: 100%;
+            height: 140vh;
+            background-color: black;
+        }
+        .b6top{
+            width: 100%;
+            height: 65vh;
+            display: flex;
+            border-bottom: .1px solid white;
+        }
+        .b6bottom{
+            width: 100%;
+            height: 75vh;
+            text-align: center;
+            padding:40px 0;
+        }
+        .b6bottom h1{
+            font: 100 8vmax "sans";
+            letter-spacing: -4px;
+            word-spacing: -3px;
+            color: white;
+        }
+        .b6bottom p{
+            font: 300 1.15vmax "gilroy";
+           margin-left: 30vmax;
+           margin-top: 1vmax;
+            width: 40%;
+            color: white;
+        }
+        .b6bottom button{
+            padding: 10px 25px;
+    color:rgb(52,162,69);
+    background-color: black;
+    border-radius: 25px;
+    cursor: pointer; font: 100 1.5vmax 'gilroy'; 
+    border:.1px solid rgb(52,162,69);
+    margin-top: 2.5vmax;
+    cursor: pointer;
+        }
+        .b6bottom button:hover{
+            color:white;
+    background-color:rgb(52,162,69);  
+        }
+        .b6tleft,.b6right{
+            width:50%;
+            height: inherit;
+            border-right: .1px solid white;
+            padding: 10px 20px;
+        }
+        .b6tleft>h1{
+            color: white;
+            font: 100 8vmax "sans";
+            line-height: 110px;
+            letter-spacing: -3px;
+        }
+        .box7{
+            width: 100%;
+            height: 130vh;
+            background-color:rgb(52,162,69);
+        }
+        .b7top{
+            width: 100%;
+            height: 75vh;
+            text-align: center;
+            padding:40px 0;
+            border-bottom: .1px solid black;
+        }
+        .b7top h1{
+            font: 100 8vmax "sans";
+            letter-spacing: -4px;
+            word-spacing: -3px;
+        }
+        .b7top p{
+            font: 300 1.15vmax "gilroy";
+           margin-left: 30vmax;
+           margin-top: 1vmax;
+            width: 40%;
+        }
+        .b7top button{
+            padding: 10px 25px;
+    color:white;
+    background-color: transparent;
+    border-radius: 25px;
+    cursor: pointer; font: 100 1.5vmax 'gilroy'; 
+    border:.1px solid white;
+    margin-top: 2.5vmax;
+    cursor: pointer;
+        }
+        .b7top button:hover{
+            color:black;
+    background-color:white;  
+        }
+        .b7bottom{
+          width: 100%;
+          height: 55vh;  
+          display: flex;
+          border-bottom: .1px solid black;
+        }
+        .b7bleft,.b7bright{
+            width:50%;
+            height: inherit;
+            border-right: .1px solid black;
+            padding: 10px 20px;
+        }
+        .b7bleft>h1,.b7bright >h1{
+           margin-bottom: 50px;
+            font: 100 4vmax "sans";
+            line-height: 110px;
+            letter-spacing: -3px;
+        }
+        .b7bleft>p,.b7bright >p{
+           margin-top: 50px;
+            font: 100 1.2vmax "gilroy";
+        }
+    </style>
+</nav>
+
+<%-include("footer") %>
+<div class="box4">
+    <div class="box4top">
+    <h1>Every idea needs a <img src="/images/wordmark.svg" height="90px" alt="">. </h1>
+</div>
+<div class="box4bottom">
+    <div class="b4bleft">
+        <p>The best ideas can change who we are. Medium is where those ideas take shape, take off, and spark powerful conversations. We’re an open platform where over 100 million readers come to find insightful and dynamic thinking. Here, expert and undiscovered voices alike dive into the heart of any topic and bring new ideas to the surface. Our purpose is to spread these ideas and deepen understanding of the world.
+        </p>
+        <br>
+        <p>We’re creating a new model for digital publishing. One that supports nuance, complexity, and vital storytelling without giving in to the incentives of advertising. It’s an environment that’s open to everyone but promotes substance and authenticity. And it’s where deeper connections forged between readers and writers can lead to discovery and growth. Together with millions of collaborators, we’re building a trusted and vibrant ecosystem fueled by important ideas and the people who think about them.
+        </p>
+    </div>
+</div>
+</div>
+<div class="box5">
+    <div class="b5top">
+        <h1>A living network of curious minds.        </h1>
+        <p>Anyone can write on Medium. Thought-leaders, journalists, experts, and individuals with unique perspectives share their thinking here. You’ll find pieces by independent writers from around the globe, stories we feature and leading authors, and smart takes on our own suite of blogs and publications.        </p>
+    </div>
+    <div class="b5bottom">
+      <div class="b5b1">
+        <div class="b5b11"> <img height="50px" src="/images/Erica_Dhawan_clip.png" alt=""><h1>Erica Dhawan </h1>  </div>
+        <div class="b5b12"> <img height="50px" src="/images/tri-col-item-03_1tri-col-item-03.png" alt=""><h1>Scott Galloway </h1> </div>
+        <div class="b5b13"> <img height="50px" src="/images/tri-col-item-07_1tri-col-item-07.png" alt=""><h1>One Zero </h1> </div>
+        <div class="b5b14"> <img height="50px" src="/images/SarahCottrell_1SarahCottrell.png" alt=""><h1>Sarah Cottrell </h1> </div>
+      </div>
+      <div class="b5b2">
+        <div class="b5b21"> <img height="50px" src="/images/DevonPrice_1DevonPrice.png" alt=""><h1>Devon Price </h1> </div>
+        <div class="b5b22"> <img height="50px" src="/images/KakiOkumura_1KakiOkumura.png" alt=""><h1>Kaki Okumura </h1> </div>
+        <div class="b5b23"> <img height="50px" src="/images/CarvellWallace_1CarvellWallace.png" alt=""><h1>Carvell Wallece </h1> </div>
+        <div class="b5b24"> <img height="50px" src="/images/tri-col-item-09_1tri-col-item-09.png" alt=""><h1>Elemental </h1> </div>
+      </div>
+      <div class="b5b3">
+        <div class="b5b31"> <img height="50px" src="/images/tri-col-item-11_1tri-col-item-11.png" alt=""><h1>Forge </h1> </div>
+        <div class="b5b32"> <img height="50px" src="/images/Hal_Harris_clip.png" alt=""><h1>Hal. H Harris </h1> </div>
+        <div class="b5b33"> <img height="50px" src="/images/tri-col-item-03_1tri-col-item-03.png" alt=""><h1>GEN </h1> </div>
+        <div class="b5b34"> <img height="50px" src="/images/Level_1Level.png" alt=""><h1>Level </h1> </div>
+      </div>
+    </div>
+</div>
+<div class="box6">
+    <div class="b6top">
+        <div class="b6tleft">
+            <h1>Over 100 <br> million <br> readers and <br> growing.            </h1>
+        </div>
+        <div class="b6tright">
+
+        </div>
+    </div>
+    <div class="b6bottom">
+ <h1>Create the space for your thinking to take off.</h1>
+ <p>A blank page is also a door. At Medium you can walk through it. It's easy and free to share your thinking on any topic, connect with an audience, express yourself with a range of publishing tools, and even earn money for your work. </p>
+<button>Write On Medium</button>   
+</div>
+</div>
+<div class="box7">
+    <div class="b7top">
+        <h1>Get more with <br> membership.        </h1>
+        <p>Become a Medium member to enjoy unlimited access and directly support the writers you read most.</p>
+        <button>See membership options</button>
+    </div>
+    <div class="b7bottom">
+        <div class="b7bleft">
+            <h1>Read as much as you want.</h1>
+            <img src="/images/UnlimitedReading.svg" alt="">
+            <p>Enjoy unlimited access to every story across all of your devices.            </p>
+        </div>
+        <div class="b7bright">
+            <h1>Reward quality content.</h1>
+            <img src="/images/SupportWriters.svg" alt="">
+            <p>Your membership helps us pay writers, and keeps your experience ad-free.            </p>
+        </div>
+    </div>
+</div>

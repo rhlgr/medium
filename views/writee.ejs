@@ -1,0 +1,50 @@
+<%-include("header login") %>
+<%-include("loginnav") %> 
+
+
+<form action="/profile" method="post">
+<div style="margin-top: 50px;" id="editorjs"></div>
+<button style="    padding: 5px 10px;
+color: white;
+background-color: rgb(26,137,23);
+border-radius: 25px;
+border: none;
+cursor: pointer;
+position: absolute; 
+top: 3%; 
+left: 70%; " >Publish</button>
+</form>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/header@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/image@2.3.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/link@2.0.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/list@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/embed@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/quote@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/code@2.8.0/dist/bundle.min.js"></script>
+<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+
+
+<script src="/javascripts/edit.js"></script>
+
+
+<script>
+    var popup = document.querySelector(".popup")
+    var cross = document.querySelector(".cross")
+    var u = document.querySelector(".u")
+
+    u.addEventListener("click", function () {
+        popup.style.display = "initial"
+    })
+
+    cross.addEventListener("click", function () {
+        popup.style.display = "none"
+    })
+</script>
+<%-include("footer login") %>

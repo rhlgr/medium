@@ -1,0 +1,136 @@
+<style>
+    .body {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .top {
+        width: 100%;
+        height: 9vh;
+        padding: 5px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .b1left {
+        width: 18%;
+        height: inherit;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .b1right {
+        width: 20%;
+        height: inherit;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .topleft {
+        width: 90%;
+        height: 6vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 25px;
+        background-color: rgba(128, 128, 128, 0.088);
+        margin-left: 1vmax;
+    }
+
+    .topleft>input {
+        outline: none;
+        background-color: transparent;
+        border: none;
+    }
+
+    .w,
+    .b,
+    .u {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .popup {
+        background-color: white;
+        width: 18%;
+        height: 40%;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        border-radius: 5px;
+        border: .1px solid rgba(0, 0, 0, 0.304);
+        position: fixed;
+        top: 8%;
+        left: 80%;
+        display: none;
+    }
+
+    .popup>a {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .cross {
+        margin-left: 230px;
+        height: 10px;
+        cursor: pointer;
+    }
+    </style>
+
+
+
+<div class="body">
+    <div class="top" style="background-color:white;border-bottom: .1px solid rgb(158, 148, 148);">
+        <div class="b1left">
+   <a href="/home" style="text-decoration: none;"> <img  src="images/download.png" height="40px" alt=""></a>
+     
+            <div class="topleft">
+                <img src="images/search-line.png" height="20px" alt="">
+                <input class="" type="text" placeholder="Search Medium">
+            </div>
+        </div>
+        <div class="b1right">
+            <a href="/writee" class="w"
+                style=" text-decoration: none; font: 100 .8vmax 'gilroy'; color: rgba(0 0 0);"><img
+                    src="images/draft-line.png" alt="">
+                <h3>Write</h3>
+            </a>
+            <a href="/notification" class="b"
+                style=" text-decoration: none; font: 100 .8vmax 'gilroy'; color: black;"> <img
+                    src="images/notification-4-line.png" alt=""></a>
+            <a class="u" style=" text-decoration: none; font: 100 .8vmax 'gilroy'; color: black;"> <img
+                    src="images/user-5-line.png" alt=""></a>
+
+
+        </div>
+    </div>
+    <div class="popup">
+        <h1 class="cross" style="height: 10px;"><img src="images/close-line.png" alt=""></h1>
+        <a href="/profile" class="one"><img src="images/user-line.png" alt="">
+            <h3>Profile</h3>
+        </a>
+        <a href="/" class="two"><img src="images/draft-line.png" alt="">
+            <h3>Lists</h3>
+        </a>
+        <a href="/" class="three"><img src="images/hard-drive-2-line.png" alt="">
+            <h3>Stories</h3>
+        </a>
+        <a href="/settings" class="four"><img src="images/settings-2-line.png" alt="">
+            <h3>Settings</h3>
+        </a>
+        <a href="/logout" class="five"><img src="images/logout-circle-r-line.png" alt="">
+            <h3>Logout</h3>
+        </a>
+    </div>

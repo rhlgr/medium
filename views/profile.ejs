@@ -1,0 +1,176 @@
+<%-include("header login") %>
+<style>
+    
+.overlay{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+}
+.popup2{
+   background-color:white;
+   width: 40%;
+   height: 80%;
+   display: flex;
+   justify-content:left;
+   flex-direction: column;
+   border-radius: 5px;
+   border: .1px solid rgba(0, 0, 0, 0.304);
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+/* display: none; */
+}
+
+.showprofile{
+    display: flex;
+}
+.spleft{
+    width: 60%;
+    height: 91vh;
+   
+}
+.btn >.btn1,.btn2{
+    margin-top: 50px;
+    margin-left: 130px;
+    padding: 10px 30px;
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.btn >.btn3,.btn4{
+    padding: 10px 30px;
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.btn5{
+    padding: 10px 30px;
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 80px;
+    margin-left: 200px;
+}
+
+.spright{
+    width: 40%;
+    height: 91vh;
+    padding-left: 40px;
+  border-left: 1px solid rgba(0, 0, 0, 0.116);
+}
+.spright h1 {
+    margin-left: 3vmax;
+    margin-top: 1vmax;
+}
+</style>
+<%-include("loginnav") %>
+<div class="showprofile">
+    <div class="spleft">
+        <h1 style="margin: 50px 200px; font: 900 3vmax 'gilroy';"><%=user.username%></h1>
+        <div style="display: flex;">
+        <h2 style="margin-left:200px;font: 300 1vmax 'gilroy';"><a href="" style=" color: black ;">Home</a></h2>
+        <h2 style="margin-left: 20px;font: 300 1vmax 'gilroy';"><a href="" style=" color: black ;">About</a></h2>
+
+    </div>
+ 
+        <form action="/profile" method="post">
+            <textarea style="margin: 20px 200px;" name="about" placeholder="enter text here" cols="50" rows="10"><%= user.about%></textarea>
+     
+            <button class="btn5" style="margin-top: 20px;">Update</button>
+        </form>
+    </div>
+    <div class="spright">
+        <br>
+        <img style="margin-top: 20px; margin-left: 30px;" height="100" src="/uploads/<%=user.avatar%>" alt="">
+        <h1 ><%=user.username%></h1>
+        <h5 class="set" style="margin: 30px 50px;" > <a style="text-decoration: none;  color: green; font-family: gilroy; cursor: pointer;"> Edit profile</a></h5>
+     
+    </div>
+</div>
+<div class="overlay">
+<div class="popup2">
+    <form action="/profile" class="btn" method="post" enctype="multipart/form-data">
+        <div style="display: flex; align-items: center;justify-content: space-between;">
+             <h1 style="font: 900 1.5vmax 'gilroy'; margin-top: 30px; margin-left: 50px;">Profile Information</h1>
+            <img class="cross1" style="margin-right: 20px; cursor: pointer;" src="images/close-line.png" alt="">
+          <!-- <%= JSON.stringify(user) %> -->
+        </div>
+             <h5  style="font: 900 1vmax 'gilroy'; margin-top: 30px; margin-left: 50px; color: gray;">Photo</h5>
+        <img style="margin-top: 10px; margin-left: 30px;" height="100" src="/uploads/<%=user.avatar%>" alt="">
+        <input  type="file" name="avatar">
+        <input type="hidden" name="oldavatar" value="<%= user.avatar%>">
+        <button class="btn3">Update</button>
+        <a class="btn4" style="text-decoration: none;" href="/delete"> Delete </a> 
+        <h6 style="font: 900 .7vmax 'gilroy';color: grey; margin-top: 20px; margin-left: 50px; ">Recommended: Square JPG, PNG, or GIF, at least 1,000 pixels per side.</h6>
+    
+    <div style="height: 10vh; width: 100%; border-bottom: .1px solid black; padding:0 30px;">
+      <!-- <%= JSON.stringify(user)%> -->
+        <h1  style="font: 900 1.3vmax 'gilroy'; margin-top: 30px; margin-left: 20px;" >Username</h1>
+        <!-- <h5  style="font: 900 1vmax 'gilroy'; margin-top: 30px; margin-left: 20px;"><%=user.username%></h5> -->
+      <input type="text" style="font: 900 1vmax 'gilroy'; outline: none ;border:none; margin-top: 30px; margin-left: 20px;" placeholder="Username" name="username">
+    </div>
+
+    <div style="height: 10vh; flex-wrap: nowrap; width: 100%; border-bottom: .1px solid black; padding:0 30px;">
+        <h1  style="font: 900 1.3vmax 'gilroy'; margin-top: 30px; margin-left: 20px;" >Bio</h1>
+        <!-- <h5  style="font: 900 1vmax 'gilroy'; margin-top: 30px; margin-left: 20px;"><%=user.about%></h5> -->
+        <input type="text" style="font: 900 1vmax 'gilroy'; outline: none ;border:none; margin-top: 30px; margin-left: 20px;" placeholder="Bio" name="about">
+    </div>
+    
+    <a href="/profile" class="btn1" style="text-decoration: none;">Cancel </a>
+    <button class="btn2">Save</button>
+    
+    
+    
+    
+    
+    
+    </form>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script>
+var popup = document.querySelector(".popup")
+var cross = document.querySelector(".cross")
+var cross1 = document.querySelector(".cross1")
+var u = document.querySelector(".u")
+var set = document.querySelector(".set")
+var overlay = document.querySelector(".overlay")
+
+u.addEventListener("click", function () {
+    popup.style.display = "initial"
+})
+
+cross.addEventListener("click", function () {
+    popup.style.display = "none"
+})
+
+set.addEventListener("click", function () {
+    overlay.style.display = "initial"
+})
+
+cross1.addEventListener("click", function () {
+    overlay.style.display = "none"
+})
+</script>
+<%-include("footer login") %>

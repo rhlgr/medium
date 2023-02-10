@@ -1,0 +1,264 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  z-index: 998;
+}
+.box1{
+  width: 100%;
+  height: 115vh;
+  /* background-color:rgb(255,192,23); */
+}
+nav{
+  width: 100%;
+  padding: 0 150px;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  border-bottom: .1px solid black;
+  position: fixed;
+  z-index: 999;
+  background-color:rgb(255,192,23);
+}
+.b1left{
+  width: 13%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.b1left>img{
+  background-color: none;
+}
+/* .b1left>h1{
+font: 700 2vmax "gilroy";
+} */
+.b1right{
+margin-left: 40vmax;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ 
+}
+.b1right>h3{
+  font: 500 .9vmax "gilroy";
+}
+
+/* .b1right>button{
+  font: 500 .9vmax "gilroy";
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+} */
+.box1part1{
+  width: 100%;
+  display: flex;
+}
+
+
+.box1part1 > .b1p1l{
+  width: 60%;
+ padding: 150px 150px 0 150px; 
+ border-bottom: .1px solid black;
+ background-color:rgb(255,192,23);
+}
+.box1part1>.b1p1l>h1{
+font-size: 7.5vmax;
+font-weight: 500;
+letter-spacing: -5px;
+}
+.box1part1>.b1p1r>h1{
+font: 500 1.5vmax "gilroy";
+text-align-last: right;
+letter-spacing: 10px;
+  }
+.b1p1r{
+  width: 40%;
+  padding: 50px 05px 10px 50px; 
+  border-bottom: .1px solid black;
+  background-color:rgb(255,192,23);
+}
+.box1part2{
+  width: 100%;
+ padding: 30px 150px; 
+ border-bottom: .1px solid rgba(0, 0, 0, 0.229);
+ background-color: white;
+
+}
+
+.box1part1>.b1p1l>p{
+  font-size: 1.5vmax;
+  font-weight: 500;
+  font-family: "gilroy";
+  margin-top: 1.7vmax;
+} 
+
+.box1part1>.b1p1l>button{
+  font: 500 1.2vmax "gilroy";
+  background-color: black;
+  color: white;
+  padding: 8px 50px;
+  border-radius: 25px; 
+  margin-top: 2vmax;
+  margin-bottom: 6vmax;
+} 
+.bit{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1vmax;
+}
+.bit>h6{
+  font-size: .8vmax;
+  font-family: "gilroy";
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.bit>i{
+  font-size: 1.5vmax;
+  margin-right: 1vmax;
+}
+
+.p2top,.p2bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.p21,.p22,.p23,.p24,.p25,.p26{
+  display: flex;
+width: 30%;
+}
+.p21t,.p22t,.p23t,.p24b,.p25b,.p26b{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.p21t>i,.p22t>i,.p23t>i,.p24b>i,.p25b>i,.p26b>i{
+  font-size: 1.5vmax;
+  margin-right: 1vmax;
+}
+.p21>i,.p22>i,.p23>i,.p24>i,.p25>i,.p26>i{
+  font-size: 2vmax;
+  margin-right: 1vmax;
+}
+.p21t>h6,.p22t>h6,.p23t>h6,.p24b>h6,.p25b>h6,.p26b>h6 {
+  font-size: .8vmax;
+  font-family: "gilroy";
+  font-weight: 600;
+}
+.p21 h1,.p22 h1,.p23 h1,.p24 h1,.p25 h1,.p26 h1{
+  font-size: 2vmax;
+  font-family: "gilroy";
+  font-weight: 900;
+margin-right: 1vmax;
+color: rgba(128, 128, 128, 0.154);
+}
+.p21 h2,.p22 h2,.p23 h2,.p24 h2,.p25 h2,.p26 h2{
+  font-size: 1vmax;
+  font-family: "gilroy";
+  font-weight: 900;
+  margin: 10px 0;
+}
+.p21 h5,.p22 h5,.p23 h5,.p24 h5,.p25 h5,.p26 h5{
+  font-family: "gilroy";
+  font-weight: 100;
+color: rgba(128, 128, 128, 0.754);
+}
+
+.box2{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.b2left{
+  width: 63%;
+  height: inherit;
+padding-left: 170px;
+}
+.b2right{
+  width: 37%;
+  height: inherit;
+}
+.b2rtop{
+width: 70%;
+height: 30%;
+padding: 50px 20px 120px 00px ;
+border-bottom: .1px solid rgba(0, 0, 0, 0.229);
+}
+.b2rtop>h5{
+font-family:"gilroy";
+letter-spacing: .5px;
+margin-bottom: 10px;
+}
+.b2rtop>button{
+  font:300 12px "gilroy";
+  letter-spacing: .5px;
+  padding: 8px 15px;
+  margin: 4px  2px;
+  color: rgb(128, 128, 128);
+  background-color: transparent;
+  border-color: rgba(128, 128, 128, 0.300);
+  }
+.b2rbottom{
+width: 70%;
+height: 10vh;
+display: flex;
+flex-wrap: wrap;
+margin-top: 20px;
+}
+.b2rbottom>h5{
+font: 100 15px "gilroy";
+margin-right: 20px;
+color: gray;
+}
+.d-one,.d-two,.d-three,.d-four{
+  width: 60%;
+  margin-top: 50px;
+}   
+.d-one h1,.d-two h1,.d-three h1,.d-four h1{
+font: 900 1.5vmax "gilroy";
+margin-right: 1vmax;
+color: rgba(0 0 0);
+cursor: pointer;
+} 
+.d-one h5,.d-two h5,.d-three h5,.d-four h5{
+font: 100 1vmax "gilroy";
+margin-right: 1vmax;
+margin-bottom: 10px;
+color: rgba(0 0 0);
+cursor: pointer;
+
+} 
+.d-one h6,.d-two h6,.d-three h6,.d-four h6{
+font: 100 .8vmax "gilroy";
+margin-right: 1vmax;
+margin-top: 10px;
+color: rgba(0, 0, 0, 0.5);
+cursor: pointer;
+
+} 
+.d-one p,.d-two p,.d-three p,.d-four p{
+font: 100 1vmax "gilroy";
+margin-right: 1vmax;
+margin-top: 10px;
+color: rgba(0, 0, 0, 0.7);
+cursor: pointer;
+
+} 
+.d-one span,.d-two span,.d-three span,.d-four span{
+font: 100 1vmax "gilroy";
+margin-right: 1vmax;
+margin-top: 10px;
+color: rgba(0, 0, 0, 0.6);
+cursor: pointer;
+
+} 

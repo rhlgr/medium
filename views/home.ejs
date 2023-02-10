@@ -1,0 +1,227 @@
+<%-include("header login") %>
+    
+    
+    
+    
+  <style>
+.box3{
+    width: 100%;
+height: 90vh;
+display: flex;
+}  
+.b3left{
+    width: 65%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.b3right{
+    width: 35%;
+    height: inherit;
+    border-left: .1px solid rgba(0, 0, 0, 0.093);
+    padding-left: 40px;
+}
+.b3top{
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-around;
+margin-top: 40px;
+    list-style: none;
+    border-bottom: .1px solid black;
+    padding-bottom: 20px;
+} 
+.b3top>li{
+font: 400 .9vmax "gilroy";
+color: rgba(128, 128, 128);
+cursor: pointer;
+transition: 1s all ease-in-out;
+}  
+.b3top>li:hover{
+color:black;
+}    
+.d-one,.d-two,.d-three{
+    width: 60%;
+    margin-top: 50px;
+}   
+.d-one h1,.d-two h1,.d-three h1{
+  font: 900 1.5vmax "gilroy";
+margin-right: 1vmax;
+color: rgba(0 0 0);
+cursor: pointer;
+} 
+.d-one h5,.d-two h5,.d-three h5{
+  font: 100 1vmax "gilroy";
+margin-right: 1vmax;
+margin-bottom: 10px;
+color: rgba(0 0 0);
+cursor: pointer;
+
+} 
+.d-one h6,.d-two h6,.d-three h6{
+  font: 100 .8vmax "gilroy";
+margin-right: 1vmax;
+margin-top: 10px;
+color: rgba(0, 0, 0, 0.5);
+cursor: pointer;
+
+} 
+.d-one p,.d-two p,.d-three p{
+  font: 100 1vmax "gilroy";
+margin-right: 1vmax;
+margin-top: 10px;
+color: rgba(0, 0, 0, 0.7);
+cursor: pointer;
+
+} 
+.d-one span,.d-two span,.d-three span{
+  font: 100 1vmax "gilroy";
+margin-right: 1vmax;
+margin-top: 10px;
+color: rgba(0, 0, 0, 0.6);
+cursor: pointer;
+
+} 
+.b3right > button{
+margin-top: 40px;
+margin-bottom: 40px;
+border-radius: 25px;
+background-color: black;
+color: white;
+font: 100 .9vmax "gilroy";
+padding: 8px 80px;
+}
+.b3right>h1{
+    font: 900 1vmax "gilroy"; 
+    margin-bottom: 30px;
+    cursor: pointer;
+    width: 50%;
+}
+.b3right>h5{
+    font: 900 .8vmax "gilroy"; 
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.b3right>h6{
+    font: 900 .8vmax "gilroy"; 
+    cursor: pointer;
+    margin-bottom: 5px;
+    color: green;
+}
+.b3last{
+    width: 60%;
+    height: 27vh;
+    background-color: rgb(225,240,255);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-top: 40px;
+}
+.b3last>h1{
+    font: 900 1vmax "gilroy"; 
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.b3last>h2{
+    font: 100 .8vmax "gilroy"; 
+    cursor: pointer;
+    margin-left: 250px;
+    margin-top: 5px;
+}
+.b3last > button{
+border-radius: 25px;
+background-color: black;
+color: white;
+font: 100 .9vmax "gilroy";
+padding: 8px 20px;
+margin-top: 20px;
+}
+    </style>
+   
+<%-include("loginnav") %>
+       <div class="box3">
+        <div class="b3left">
+          <div class="b3top">
+           <li>➕</li>
+           <li>For you</li>
+           <li>Following</li>
+           <li>Web development</li>
+           <li>Technology</li>
+           <li>Programming</li>
+          </div>
+          <div class="d-one">
+            <h5>Jacob Bennett in Level Up Coding <span> ·Nov 30 ✨ Member-only</span></h5>
+            <h1>Use Git like a senior engineer</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas cumque, officia illum sit dolore optio repellendus! Ab, similique consequuntur autem dolor numquam magni, voluptates iste sapiente odio molestias velit deleniti.</p>
+            <h6>Dec 14 · 7 min read </h6>
+        </div>
+          <div class="d-two">
+            <h5>Clive Thompson in Better Programming  <span> ·Nov 30 ✨ Member-only</span></h5>
+            <h1>Tiny Snippets of Code That Changed The World</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas cumque, officia illum sit dolore optio repellendus! Ab, similique consequuntur autem dolor numquam magni, voluptates iste sapiente odio molestias velit deleniti.</p>
+            <h6>Dec 14 · 7 min read </h6>
+        </div>
+        <div class="d-three">
+            <h5>Clive Thompson in Better Programming <span> ·Nov 30 ✨ Member-only</span></h5>
+            <h1>Tiny Snippets of Code That Changed The World</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas cumque, officia illum sit dolore optio repellendus! Ab, similique consequuntur autem dolor numquam magni, voluptates iste sapiente odio molestias velit deleniti.</p>
+            <h6>Dec 14 · 7 min read </h6>
+        </div>
+        </div>
+        <div class="b3right">
+    <button>Get unlimited access</button>
+    <h1>2022 in review</h1>
+    <h5>Lorem ipsum dolor sit.</h5>
+    <h1>2022: The year that changed the way we work    </h1>
+    <h5>Lorem ipsum dolor sit amet.</h5>
+    <h1>My 2022 End of Year Lists    </h1>
+    <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h5>
+    <h1>Microdosing, Mastodon, and Jonah Hill.    </h1>
+    <h6>See the full list</h6>
+    <div class="b3last">
+        <h2>❌</h2>
+        <h1 >Writing on Medium </h1>
+           <h1> New writer FAQ </h1>
+        <h1>   Expert writing advice </h1>
+        <h1>  Grow your readership </h1>
+           
+            <button>Start Writing</button>
+    </div>
+        </div>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script>
+        var popup = document.querySelector(".popup")
+        var cross = document.querySelector(".cross")
+        var u = document.querySelector(".u")
+
+        u.addEventListener("click", function () {
+            popup.style.display = "initial"
+        })
+
+        cross.addEventListener("click", function () {
+            popup.style.display = "none"
+        })
+    </script>
+    <%-include("footer login") %>
